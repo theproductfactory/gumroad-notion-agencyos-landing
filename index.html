@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="./src/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main id="app">
+        <header class="flex flex-row justify-between items-center py-10 px-20">
+            <img src="/logo.png" alt="Logotype" width="118" height="29"
+                data-ai-prompt="Website logo. Should be provided by user. Provide options to use as generate" />
+            <nav class="flex flex-row space-x-10">
+                <a href="#testimonials" class="text-body-1/17">Testimonials</a>
+                <a href="#benefits" class="text-body-1/17">Benefits</a>
+                <a href="#features" class="text-body-1/17">Features</a>
+                <a href="#pricing" class="text-body-1/17">Pricing</a>
+                <a href="#faq" class="text-body-1/17">FAQ</a>
+            </nav>
+            <a href="#pricing">
+                <button class="bg-white text-gray-2 border-color border-1 rounded-full h-12 px-4">
+                    Get it now
+                </button>
+            </a>
+        </header>
+        <section class="relative overflow-clip w-full h-[985px] flex flex-col items-center mt-20 gap-4">
+            <div class="flex flex-row gap-2">
+                <div class="flex flex-row">
+                    <img src="./customer-1.svg" class="size-6" alt="">
+                    <img src="./customer-2.svg" class="size-6 -ml-2" alt="">
+                    <img src="./customer-3.svg" class="size-6 -ml-2" alt="">
+                    <img src="./customer-4.svg" class="size-6 -ml-2" alt="">
+                </div>
+                <span class="text-gray-4">
+                    400+ customers
+                </span>
+            </div>
+            <div class="relative h-fit w-fit z-20 mb-32">
+                <img class="absolute -bottom-14 left-9 -rotate-3 border-white" height="154" width="154"
+                    src="/notion-logo.png" alt="Notion Logo"
+                    data-ai-prompt="Notion logo. Search on the internet, dont make up. Well known logo, can be searched from <source>" />
+                <h1 class="text-headline-1/17 text-center font-semibold tracking-tighter">
+                    All-in-one Notion <br />
+                    <span class="ml-32"> workspace</span>
+                </h1>
+            </div>
+            <div class="relative w-full flex justify-center items-stretch content-stretch">
+                <div
+                    class="z-20 backdrop-blur-2xl absolute text-base text-gray-3 top-[2px] left-1/2 w-[calc(58ch+10px)] text-center -translate-x-1/2 py-2 pb-[calc(theme(spacing.4)+0.5px)] bg-gradient-to-r from-[hsla(0,0%,96%,44%)] to-[hsla(0,0%,98%,60%)] rounded-t-[50px]">
+                    Built to help agency owners save time & reclaim freedom
+                </div>
+                <div
+                    class="mt-10 z-0 max-w-[1045px] h-[510px] backdrop-blur-2xl  bg-gradient-to-r from-[hsla(0,0%,96%,44%)] to-[hsla(0,0%,98%,60%)] rounded-[50px] p-3">
+                    <img src="./product-image.png" class="relative z-30 rounded-[40px] h-full" />
+                    <a href="#pricing" class="w-40 h-12">
+                        <button
+                            class="bg-gray-6 shadow-inner flex items-center justify-between pl-4 z-40 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 rounded-full p-1 gap-3">
+                            <span class="text-white font-semibold w-fit">
+                                Get it now
+                            </span>
+                            <div class="rounded-full bg-white">
+                                <img src="./arrow-click.svg" class="size-10" />
+                            </div>
+                        </button>
+                    </a>
+                    <div
+                        class="absolute bottom-3 rounded-b-[40px] z-30 h-[450px] bg-gradient-to-b from-transparent to-black/40 w-full max-w-[calc(100%-theme(spacing.6))]" />
+                </div>
+            </div>
+            <img class="absolute inset-0 -z-10 -top-[450px] w-full" src="./texture-bg.svg" alt="" />
+        </section>
+        <section id="testimonials" class="-mt-44 overflow-clip relative w-full h-fit flex flex-col items-center bg-gray-5 z-40 py-16">
+            <img src="./section-crown.svg" class="absolute top-0 -translate-y-[46%] z-40" />
+            <div class="flex flex-row gap-4 p-2">
+                <div
+                    class="flex flex-col min-h-auto  h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">Everything just flows now</p>
+                    <p class="text-base">Tasks, clients, and finances, finally organized in one simple dashboard.</p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-1.svg" class="size-7" />
+                        <p class="text-base">Lisa – Visionary Labs</p>
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">Game-changing for my agency</p>
+                    <p class="text-base">Finally found a system that adapts to how we work, not the other way around.
+                    </p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-2.svg" class="size-7" />
+                        <p class="text-base">Mark – Digital Craft Co.</p>
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col min-h-full h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">Worth every penny</p>
+                    <p class="text-base">Saved us countless hours of admin work and helped us focus on client success.
+                    </p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-3.svg" class="size-7" />
+                        <p class="text-base">Sarah – Bloom Design</p>
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">Exceeded expectations</p>
+                    <p class="text-base">The all-in-one solution we've been searching for to manage our growing team.
+                    </p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-4.svg" class="size-7" />
+                        <p class="text-base">James – Pixel Perfect</p>
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">Streamlined our workflow</p>
+                    <p class="text-base">From chaos to clarity in just one week. Our team is more productive than ever.
+                    </p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-1.svg" class="size-7" />
+                        <p class="text-base">David – Elevate Studios</p>
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">Client management simplified</p>
+                    <p class="text-base">The perfect balance of simplicity and power. Our clients love the results.</p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-2.svg" class="size-7" />
+                        <p class="text-base">Emma – Spark Creative</p>
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">A true game-changer</p>
+                    <p class="text-base">Finally found a tool that understands the unique needs of creative agencies.
+                    </p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-3.svg" class="size-7" />
+                        <p class="text-base">Michael – Fusion Media</p>
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-row gap-4 p-2 -translate-x-10">
+                <div
+                    class="flex flex-col h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">Boosted our productivity</p>
+                    <p class="text-base">We've cut admin time in half and doubled our client satisfaction scores.</p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-4.svg" class="size-7" />
+                        <p class="text-base">Alex – Horizon Digital</p>
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">Perfect for remote teams</p>
+                    <p class="text-base">Keeps our global team aligned and our projects moving forward seamlessly.</p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-1.svg" class="size-7" />
+                        <p class="text-base">Olivia – Global Creatives</p>
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">Transformed our business</p>
+                    <p class="text-base">From struggling to scaling, this system has been the backbone of our growth.
+                    </p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-2.svg" class="size-7" />
+                        <p class="text-base">Ryan – Ascend Agency</p>
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">Intuitive and powerful</p>
+                    <p class="text-base">Easy to learn but deep enough to handle all our complex client workflows.</p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-3.svg" class="size-7" />
+                        <p class="text-base">Sophia – Bright Ideas</p>
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">Best investment we made</p>
+                    <p class="text-base">The ROI was immediate. Wish we had discovered this years ago for our agency.
+                    </p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-4.svg" class="size-7" />
+                        <p class="text-base">Daniel – Momentum Media</p>
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col h-full px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)] w-72">
+                    <p class="text-base font-medium">Exceptional organization</p>
+                    <p class="text-base">Never lose track of projects or deadlines again. Complete peace of mind.</p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-1.svg" class="size-7" />
+                        <p class="text-base">Natalie – Precision Design</p>
+                    </span>
+                </div>
+                <div class="flex flex-col h-full w-72 text-gray-1 border-gray-5/70 gap-4 rounded-xl border inner-shadow bg-gray-6 p-5"
+                    style="box-shadow: 1px 1px 0px 0px hsla(0, 0%, 28%, 0.8);">
+                    <p class="text-base font-medium">Client communication improved</p>
+                    <p class="text-base">Our clients appreciate the transparency and organization we now provide.</p>
+                    <span class="font-medium gap-2 mt-auto flex flex-row">
+                        <img src="./customer-2.svg" class="size-7" />
+                        <p class="text-base">Thomas – Clarity Studio</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="flex flex-row text-white items-center justify-center gap-5 my-5">
+                <span>
+                    We love our users and thankfully they love us too.
+                </span>
+                <button
+                    class="bg-transparent border-color border-1 rounded-full h-12 p-1 flex flex-row pl-4 gap-5 justify-center items-center">
+                    Join our community
+                    <div class="rounded-full bg-white">
+                        <img src="./arrow-click.svg" class="size-10" />
+                    </div>
+                </button>
+            </div>
+        </section>
+        <section id="benefits" class="overflow-clip relative w-full h-fit flex flex-col items-center bg-white z-40 py-16">
+            <div class="flex flex-col items-center gap-4 text-center">
+                <div
+                    class="relative rounded-full bg-gray-5 w-28 h-9 text-white inner-shadow border border-gray-1 flex flex-row items-center justify-center">
+                    <img src="./label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
+                    <div class="relative z-10 flex text-sm flex-row gap-2 items-center justify-center">
+                        <img src="./star-icon.svg" class="size-4" />
+                        <p>Benefits</p>
+                    </div>
+                </div>
+                <h2 class="text-headline-2/17 text-center font-semibold tracking-tighter">
+                    Everything in one place
+                </h2>
+                <p class="flex flex-row gap-4 p-2 max-w-[520px]">The system that keeps everything organized so you
+                    <br /> can focus on growing your business
+                </p>
+            </div>
+            <div class="flex flex-row flex-wrap gap-4 justify-center mt-10 max-w-6xl mx-auto">
+                <div class="flex flex-col w-72 p-6 rounded-xl gap-1 bg-[#FAFAFA]">
+                    <img src="/folders.svg" alt="Client Projects" class="size-10 mb-4" />
+                    <h3 class="font-semibold text-base">Client Projects</h3>
+                    <p class="text-gray-2 text-sm">Manage multiple projects, clients, and services seamlessly.</p>
+                </div>
+                <div class="flex flex-col w-72 p-6 rounded-xl gap-1 bg-[#F5F5F5]">
+                    <img src="/invoice.svg" alt="Client Projects" class="size-10 mb-4" />
+                    <h3 class="font-semibold text-base">Client Projects</h3>
+                    <p class="text-gray-2 text-sm">Manage multiple projects, clients, and services seamlessly.</p>
+                </div>
+                <div class="flex flex-col w-72 p-6 rounded-xl gap-1 bg-[#F0F0F0]">
+                    <img src="/handshake.svg" alt="Client Projects" class="size-10 mb-4" />
+                    <h3 class="font-semibold text-base">Client Projects</h3>
+                    <p class="text-gray-2 text-sm">Manage multiple projects, clients, and services seamlessly.</p>
+                </div>
+                <div class="flex flex-col w-72 p-6 rounded-xl gap-1 bg-[#F5F5F5]">
+                    <img src="/document-arrow-right.svg" alt="Client Projects" class="size-10 mb-4" />
+                    <h3 class="font-semibold text-base">Client Projects</h3>
+                    <p class="text-gray-2 text-sm">Manage multiple projects, clients, and services seamlessly.</p>
+                </div>
+                <div class="flex flex-col w-72 p-6 rounded-xl gap-1 bg-[#F0F0F0]">
+                    <img src="/pencil.svg" alt="Client Projects" class="size-10 mb-4" />
+                    <h3 class="font-semibold text-base">Client Projects</h3>
+                    <p class="text-gray-2 text-sm">Manage multiple projects, clients, and services seamlessly.</p>
+                </div>
+                <div class="flex flex-col w-72 p-6 rounded-xl gap-1 bg-[#F5F5F5]">
+                    <img src="/checklist.svg" alt="Client Projects" class="size-10 mb-4" />
+                    <h3 class="font-semibold text-base">Client Projects</h3>
+                    <p class="text-gray-2 text-sm">Manage multiple projects, clients, and services seamlessly.</p>
+                </div>
+                <div class="flex flex-col w-72 p-6 rounded-xl gap-1 bg-[#F0F0F0]">
+                    <img src="/square-pair-check.svg" alt="Client Projects" class="size-10 mb-4" />
+                    <h3 class="font-semibold text-base">Client Projects</h3>
+                    <p class="text-gray-2 text-sm">Manage multiple projects, clients, and services seamlessly.</p>
+                </div>
+                <div class="flex flex-col w-72 p-6 rounded-xl gap-1 bg-[#F5F5F5]">
+                    <img src="/notebook-pencil.svg" alt="Client Projects" class="size-10 mb-4" />
+                    <h3 class="font-semibold text-base">Client Projects</h3>
+                    <p class="text-gray-2 text-sm">Manage multiple projects, clients, and services seamlessly.</p>
+                </div>
+                <div class="flex flex-col w-72 p-6 rounded-xl gap-1 bg-[#FAFAFA]">
+                    <img src="/person-check.svg" alt="Client Projects" class="size-10 mb-4" />
+                    <h3 class="font-semibold text-base">Client Projects</h3>
+                    <p class="text-gray-2 text-sm">Manage multiple projects, clients, and services seamlessly.</p>
+                </div>
+            </div>
+        </section>
+        <section id="features" class="relative overflow-clip px-32 pt-24 w-full gap-10 flex flex-col items-center bg-gray-0 z-40">
+            <div
+                class="h-full max-w-[940px] w-full bg-white rounded-t-[80px] p-20 border-8 border-gray-2/5 translate-y-8">
+                <div class="flex flex-col gap-4 items-center text-center pb-10">
+                    <div
+                        class="relative rounded-full bg-gray-5 w-28 h-9 text-white inner-shadow border border-gray-1 flex flex-row items-center justify-center">
+                        <img src="./label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
+                        <div class="relative z-10 flex text-sm flex-row gap-2 items-center justify-center">
+                            <img src="./star-icon.svg" class="size-4" />
+                            <p>Features</p>
+                        </div>
+                    </div>
+                    <h2 class="text-headline-2/17 text-center font-semibold tracking-tighter">
+                        Take a look inside
+                    </h2>
+                    <p class="flex flex-row gap-4 p-2 max-w-[520px]">Get a sneak peek inside the system that simplifies
+                        and streamlines your agency’s workflow</p>
+                </div>
+                <div class="flex flex-col gap-6 mt-10">
+                    <div class="flex flex-row gap-6">
+                        <div class="flex-1 bg-[#FAFAFA] rounded-xl text-center flex flex-col justify-between">
+                            <div class="relative overflow-clip max-h-[300px]">
+                                <img src="/feature-1.png" alt="Seamless project management" class="object-cover" />
+                            </div>
+                            <div class="p-6">
+                                <h4 class="font-semibold text-base mb-1">Seamless project management</h4>
+                                <p class="text-gray-2 text-sm">Track every project from start to finish with structured
+                                    <br />
+                                    workflows, deadlines, and team collaboration.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-1 lg:max-w-[300px] bg-[#FAFAFA] overflow-clip rounded-xl p-6 text-center flex flex-col justify-between">
+                            <div class="relative overflow-clip -mx-6 -mt-6">
+                                <img src="/feature-2.png" alt="Built-in automation"
+                                    class="object-cover max-h-[300px]" />
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-base mb-1">Built-in automation</h4>
+                                <p class="text-gray-2 text-sm">Automate proposals, invoices, and onboarding to save
+                                    time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gap-6 bg-[#FAFAFA] rounded-xl p-6 text-center flex flex-col-reverse justify-between">
+                        <div class="relative overflow-clip max-h-[300px] -mb-6">
+                            <img src="/feature-3.png" alt="Centralized dashboard" class="object-cover" />
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-base mb-1">Centralized dashboard</h4>
+                            <p class="text-gray-2 text-sm">Get a bird's-eye view of your agency—projects, clients,
+                                <br />
+                                tasks, and key metrics, all in one place.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./white-texture-bg.svg" class="absolute inset-0 -z-10 bottom-0 w-full" />
+        </section>
+        <section id="pricing" class="relative h-[862px] w-full bg-gray-5 flex flex-row items-center justify-center">
+            <div class="max-w-[940px] flex flex-row gap-10 items-center justify-center">
+                <div class="flex flex-col h-fit gap-4 items-start text-left pb-10 text-white max-w-[450px]">
+                    <div
+                        class="relative rounded-full bg-gray-5 w-28 h-9 text-white shadow-inner border border-gray-1/10 flex flex-row items-center justify-center">
+                        <img src="./label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
+                        <div class="relative z-10 flex text-sm flex-row gap-2 items-center justify-center">
+                            <img src="./star-icon.svg" class="size-4" />
+                            <p>Features</p>
+                        </div>
+                    </div>
+                    <h2 class="text-headline-2/17 font-semibold tracking-tighter">
+                        Pay once, <br /> use forever
+                    </h2>
+                    <p class="text-white/60 flex flex-row gap-4 p-2 max-w-[520px]">Enjoy lifetime access, community
+                        support,
+                        and no subscription fees.</p>
+                </div>
+                <div
+                    class="flex w-[450px] flex-col h-fit p-10 text-white gap-6 rounded-[40px] border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_3px_0px_rgba(0,0,0,0.35)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.80),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.80)] backdrop-blur-[1.8px]">
+                    <h3 class="text-2xl font-medium">
+                        Agency OS Template
+                    </h3>
+                    <p class="text-5xl font-medium my-3">
+                        $199
+                    </p>
+                    <ul class="flex flex-col gap-2">
+                        <li class="space-x-2 flex flex-row items-center">
+                            <img src="./check.svg" class="size-4" />
+                            <p class="font-[400] text-gray-1/60">
+                                Template access
+                            </p>
+                        </li>
+                        <li class="space-x-2 flex flex-row items-center">
+                            <img src="./check.svg" class="size-4" />
+                            <p class="font-[400] text-gray-1/60">
+                                Tutorials and examples
+                            </p>
+                        </li>
+                        <li class="space-x-2 flex flex-row items-center">
+                            <img src="./check.svg" class="size-4" />
+                            <p class="font-[400] text-gray-1/60">
+                                Private community
+                            </p>
+                        </li>
+                        <li class="space-x-2 flex flex-row items-center">
+                            <img src="./check.svg" class="size-4" />
+                            <p class="font-[400] text-gray-1/60">
+                                14-day money-back guarantee
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="border-b border-gray-1/20 bg-black h-[2px] w-full"> </div>
+                    <a href="#buyitlink" class="w-full h-12">
+                        <button
+                            class="bg-white py-8 text-3xl w-full font-medium text-gray-5 rounded-full h-12 p-1 flex flex-row pl-4 gap-5 justify-between items-center shadow-[0px_-1px_0px_0px_#B8B8B8_inset,0px_0px_0px_1px_rgba(255,255,255,0.90)_inset,0px_14px_14px_-10px_#CFCFCF_inset,0px_4px_4px_0px_rgba(0,0,0,0.10),0px_0px_0px_0.5px_rgba(0,0,0,0.25),1px_2px_25px_-6px_#959595,0px_4px_3px_0px_rgba(0,0,0,0.36)]">
+                            <span>
+                                Get it now
+                            </span>
+                            <img src="./arrow-click.svg" class="size-12 bg-transparent" />
+                        </button>
+                    </a>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="overflow-clip relative w-full h-fit flex flex-col items-center bg-white z-40 py-16">
+            <div class="flex flex-col items-center gap-4 text-center max-w-[940px]">
+                <div
+                    class="relative rounded-full bg-gray-5 w-28 h-9 text-white inner-shadow border border-gray-1 flex flex-row items-center justify-center">
+                    <img src="./label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
+                    <div class="relative z-10 flex text-sm flex-row gap-2 items-center justify-center">
+                        <img src="./star-icon.svg" class="size-4" />
+                        <p>FAQ</p>
+                    </div>
+                </div>
+                <h2 class="text-headline-2/17 text-center font-semibold tracking-tighter">
+                    Still have questions?
+                </h2>
+                <p class="flex flex-row gap-4 p-2 max-w-[520px]">
+                    Get the answers you need before getting started
+                </p>
+            </div>
+            <div class="max-w-[940px] w-full mt-10">
+                <details
+                    class="group group border-b border-gray-2/20 py-5 bg-gray-0 px-5 [&[open]]:font-medium font-normal [&[open]]:bg-gray-3/8 rounded-t-3xl">
+                    <summary class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl">How does this work?</h3>
+                        <img src="./chevron-down.svg" class="size-5 group-[&[open]]:rotate-180 duration-150" />
+                    </summary>
+                    <div class="pt-4 text-gray-3 font-normal">
+                        <p>After purchase, you'll receive a link to duplicate the template into your Notion account.
+                            If you're new to Notion, we've included a video to help you get started.</p>
+                    </div>
+                </details>
+
+                <details
+                    class="group border-b border-gray-2/20 py-5 bg-gray-0 px-5 [&[open]]:font-medium font-normal [&[open]]:bg-gray-3/8">
+                    <summary class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl">Is it really worth $97?</h3>
+                        <img src="./chevron-down.svg" class="size-5 group-[&[open]]:rotate-180 duration-150" />
+                    </summary>
+                    <div class="pt-4 text-gray-3 font-normal">
+                        <p>Yes! This template will save you dozens of hours setting up your workspace and help you
+                            manage your business more efficiently.</p>
+                    </div>
+                </details>
+
+                <details
+                    class="group border-b border-gray-2/20 py-5 bg-gray-0 px-5 [&[open]]:font-medium font-normal [&[open]]:bg-gray-3/8">
+                    <summary class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl">Can I use this with Notion's free plan?</h3>
+                        <img src="./chevron-down.svg" class="size-5 group-[&[open]]:rotate-180 duration-150" />
+                    </summary>
+                    <div class="pt-4 text-gray-3 font-normal">
+                        <p>Absolutely! Our template works with Notion's free plan, though some advanced features may
+                            require a paid Notion subscription.</p>
+                    </div>
+                </details>
+
+                <details
+                    class="group py-5 bg-gray-0 px-5 [&[open]]:font-medium font-normal [&[open]]:bg-gray-3/8 rounded-b-3xl">
+                    <summary class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl">What is your refund policy?</h3>
+                        <img src="./chevron-down.svg" class="size-5 group-[&[open]]:rotate-180 duration-150" />
+                    </summary>
+                    <div class="pt-4 text-gray-3 font-normal">
+                        <p>We offer a 14-day money-back guarantee. If you're not satisfied with the template, simply
+                            email us within 14 days of purchase, and we'll process your refund with no questions
+                            asked.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+        <footer
+            class="relative pt-28 px-28 overflow-clip w-full h-[785px] bg-[#FAFAFA] flex flex-col items-center mt-20 gap-4">
+            <div class="flex flex-row gap-2">
+                <div class="flex flex-row">
+                    <img src="./customer-1.svg" class="size-6" alt="">
+                    <img src="./customer-2.svg" class="size-6 -ml-2" alt="">
+                    <img src="./customer-3.svg" class="size-6 -ml-2" alt="">
+                    <img src="./customer-4.svg" class="size-6 -ml-2" alt="">
+                </div>
+                <span class="text-gray-4">
+                    400+ customers
+                </span>
+            </div>
+            <div class="relative h-fit w-fit z-20 mb-12">
+                <h1 class="text-headline-1/17 text-center font-semibold tracking-tighter">
+                    Ready to streamline <br /> your agency?
+                </h1>
+            </div>
+            <a href="#pricing" class="w-40 h-12">
+                <button
+                    class="bg-gray-6 shadow-inner flex items-center justify-between pl-4 z-40 rounded-full p-1 w-full h-full">
+                    <span class="text-white font-semibold w-fit">
+                        Get it now
+                    </span>
+                    <div class="rounded-full bg-white">
+                        <img src="./arrow-click.svg" class="size-10" />
+                    </div>
+                </button>
+            </a>
+            <img class="absolute inset-0 z-0 w-full" src="./footer-bg.svg" alt="" />
+            <div class="bottom-4 absolute flex flex-row items-center justify-between w-full max-w-[calc(100vw-200px)]">
+                <p class="py-2 px-4 rounded-full bg-gray-2/50 backdrop-blur-3xl text-white">
+                    © <span id="year"></span> AgencyOS. All rights reserved · Privacy Policy
+                    <script>
+                        document.getElementById('year').textContent = new Date().getFullYear();
+                    </script>
+                </p>
+                <p class="py-2 px-4 rounded-full bg-gray-2/50 backdrop-blur-3xl text-white">
+                    <a href="https://x.com/_productfactory" target="_blank" class="hover:underline">X</a> <span
+                        class="mx-2">·</span>
+                    <a href="https://www.linkedin.com/" target="_blank" class="hover:underline">Linkedin</a> <span
+                        class="mx-2">·</span>
+                    <a href="https://www.instagram.com/" target="_blank" class="hover:underline">Instagram</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
