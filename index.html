@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link href="./src/style.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,13 +20,13 @@
             <div class="flex flex-row items-center gap-4">
                 <input type="checkbox" id="menu-toggle" class="hidden" />
                 <label for="menu-toggle" class="cursor-pointer lg:hidden">
-                    <img src="./menu.svg" alt="Menu" class="size-6" />
+                    <img src="/menu.svg" alt="Menu" class="size-6" />
                 </label>
                 <nav
                     class="flex flex-col lg:hidden space-y-4 bg-gray-5 backdrop-blur-3xl p-4 fixed inset-0 z-50 text-white text-6xl opacity-0 pointer-events-none [#menu-toggle:checked+label+&]:opacity-100 [#menu-toggle:checked+label+&]:pointer-events-auto transition-opacity duration-200">
                     <div class="flex justify-between items-center pb-4 pt-4 pl-1">
                         <label for="menu-toggle" class="cursor-pointer">
-                           <img src="./close.svg" alt="Close" class="size-6 text-white">
+                           <img src="/close.svg" alt="Close" class="size-6 text-white">
                         </label>
                     </div>
                     <div class="overflow-y-auto h-full [&>a]:border-b-2 [&>a]:border-gray-1/10 [&>a]:py-4 [&>a]:px-2">
@@ -55,10 +55,10 @@
         <section class="relative overflow-clip w-full h-[800px] lg:h-[985px] flex flex-col items-center mt-20 gap-4">
             <div class="flex flex-row gap-2">
                 <div class="flex flex-row">
-                    <img src="./customer-1.svg" class="size-6" alt="">
-                    <img src="./customer-2.svg" class="size-6 -ml-2" alt="">
-                    <img src="./customer-3.svg" class="size-6 -ml-2" alt="">
-                    <img src="./customer-4.svg" class="size-6 -ml-2" alt="">
+                    <img src="/customer-1.svg" class="size-6" alt="">
+                    <img src="/customer-2.svg" class="size-6 -ml-2" alt="">
+                    <img src="/customer-3.svg" class="size-6 -ml-2" alt="">
+                    <img src="/customer-4.svg" class="size-6 -ml-2" alt="">
                 </div>
                 <span class="text-gray-4">
                     400+ customers
@@ -83,7 +83,7 @@
                         Get it now
                     </span>
                     <div class="rounded-full bg-white">
-                        <img src="./arrow-click.svg" class="size-10" />
+                        <img src="/arrow-click.svg" class="size-10" />
                     </div>
                 </button>
             </a>
@@ -94,7 +94,7 @@
                 </div>
                 <div
                     class="mt-10 z-0 w-[1045px] h-[345px] lg:h-[510px] backdrop-blur-2xl translate-x-1/5 md:translate-x-0 bg-gradient-to-r from-[hsla(0,0%,96%,44%)] to-[hsla(0,0%,98%,60%)] rounded-t-[50px] lg:rounded-[50px] p-3">
-                    <img src="./product-image.png" class="relative z-30 rounded-t-[40px] lg:rounded-[40px] h-full w-full object-cover" />
+                    <img src="/product-image.png" class="relative z-30 rounded-t-[40px] lg:rounded-[40px] h-full w-full object-cover" />
                     <a href="#pricing" class="hidden lg:block w-40 h-12">
                         <button
                             class="bg-gray-6 shadow-[0px_6px_24px_0px_rgba(52,52,52,0.40)] flex items-center justify-between pl-4 z-40 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 rounded-full p-2 gap-3">
@@ -102,7 +102,7 @@
                                 Get it now
                             </span>
                             <div class="rounded-full bg-white">
-                                <img src="./arrow-click.svg" class="size-10" />
+                                <img src="/arrow-click.svg" class="size-10" />
                             </div>
                         </button>
                     </a>
@@ -110,11 +110,11 @@
                         class="absolute bottom-3 lg:rounded-b-[40px] z-30 lg:h-[450px] bg-gradient-to-b from-transparent to-black/40 w-full max-w-[calc(100%-theme(spacing.6))]" />
                 </div>
             </div>
-            <img class="absolute scale-105 -left-4 -right-4 bottom-0 md:-bottom-13 -z-10 lg:-top-[450px] lg:bottom-auto w-full lg:w-[calc(100%+theme(spacing.8))] h-full md:h-auto" src="./texture-bg.svg" alt="" />
+            <img class="absolute scale-105 -left-4 -right-4 bottom-0 md:-bottom-13 -z-10 lg:-top-[450px] lg:bottom-auto w-full lg:w-[calc(100%+theme(spacing.8))] h-full md:h-auto" src="/texture-bg.svg" alt="" />
         </section>
         <section id="testimonials"
             class="-mt-44 overflow-clip relative w-full h-fit flex flex-col items-center bg-gray-5 z-40 py-16">
-            <img src="./section-crown.svg" class="absolute top-0 -translate-y-[46%] z-40" />
+            <img src="/section-crown.svg" class="absolute top-0 -translate-y-[46%] z-40" />
             <div class="grid grid-flow-col auto-cols-[288px] gap-4 p-2">
                 <div
                     class="flex flex-col justify-between px-8 py-6 text-white gap-4 rounded-2xl border-[1.8px] border-[#1A1A1A] bg-black/20 shadow-[0px_-4px_10px_0px_rgba(0,0,0,0.15)_inset,0.9px_-0.9px_0px_0px_rgba(71,71,71,0.10),-0.9px_-0.9px_0px_0px_rgba(71,71,71,0.40)]">
@@ -123,7 +123,7 @@
                     <p class="text-base">Tasks, clients, and finances, finally organized in one simple dashboard.</p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-1.svg" class="size-7" />
+                        <img src="/customer-1.svg" class="size-7" />
                         <p class="text-base">Lisa – Visionary Labs</p>
                     </span>
                 </div>
@@ -135,7 +135,7 @@
                     </p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-2.svg" class="size-7" />
+                        <img src="/customer-2.svg" class="size-7" />
                         <p class="text-base">Mark – Digital Craft Co.</p>
                     </span>
                 </div>
@@ -147,7 +147,7 @@
                     </p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-3.svg" class="size-7" />
+                        <img src="/customer-3.svg" class="size-7" />
                         <p class="text-base">Sarah – Bloom Design</p>
                     </span>
                 </div>
@@ -159,7 +159,7 @@
                     </p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-4.svg" class="size-7" />
+                        <img src="/customer-4.svg" class="size-7" />
                         <p class="text-base">James – Pixel Perfect</p>
                     </span>
                 </div>
@@ -171,7 +171,7 @@
                     </p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-1.svg" class="size-7" />
+                        <img src="/customer-1.svg" class="size-7" />
                         <p class="text-base">David – Elevate Studios</p>
                     </span>
                 </div>
@@ -182,7 +182,7 @@
                     <p class="text-base">The perfect balance of simplicity and power. Our clients love the results.</p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-2.svg" class="size-7" />
+                        <img src="/customer-2.svg" class="size-7" />
                         <p class="text-base">Emma – Spark Creative</p>
                     </span>
                 </div>
@@ -194,7 +194,7 @@
                     </p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-3.svg" class="size-7" />
+                        <img src="/customer-3.svg" class="size-7" />
                         <p class="text-base">Michael – Fusion Media</p>
                     </span>
                 </div>
@@ -208,7 +208,7 @@
                         <p class="text-base">We've cut admin time in half and doubled our client satisfaction scores.</p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-4.svg" class="size-7" />
+                        <img src="/customer-4.svg" class="size-7" />
                         <p class="text-base">Alex – Horizon Digital</p>
                     </span>
                 </div>
@@ -219,7 +219,7 @@
                         <p class="text-base">Keeps our global team aligned and our projects moving forward seamlessly.</p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-1.svg" class="size-7" />
+                        <img src="/customer-1.svg" class="size-7" />
                         <p class="text-base">Olivia – Global Creatives</p>
                     </span>
                 </div>
@@ -231,7 +231,7 @@
                         </p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-2.svg" class="size-7" />
+                        <img src="/customer-2.svg" class="size-7" />
                         <p class="text-base">Ryan – Ascend Agency</p>
                     </span>
                 </div>
@@ -242,7 +242,7 @@
                         <p class="text-base">Easy to learn but deep enough to handle all our complex client workflows.</p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-3.svg" class="size-7" />
+                        <img src="/customer-3.svg" class="size-7" />
                         <p class="text-base">Sophia – Bright Ideas</p>
                     </span>
                 </div>
@@ -254,7 +254,7 @@
                         </p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-4.svg" class="size-7" />
+                        <img src="/customer-4.svg" class="size-7" />
                         <p class="text-base">Daniel – Momentum Media</p>
                     </span>
                 </div>
@@ -265,7 +265,7 @@
                         <p class="text-base">Never lose track of projects or deadlines again. Complete peace of mind.</p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-1.svg" class="size-7" />
+                        <img src="/customer-1.svg" class="size-7" />
                         <p class="text-base">Natalie – Precision Design</p>
                     </span>
                 </div>
@@ -275,7 +275,7 @@
                         <p class="text-base">Our clients appreciate the transparency and organization we now provide.</p>
                     </div>
                     <span class="font-medium gap-2 flex flex-row">
-                        <img src="./customer-2.svg" class="size-7" />
+                        <img src="/customer-2.svg" class="size-7" />
                         <p class="text-base">Thomas – Clarity Studio</p>
                     </span>
                 </div>
@@ -289,7 +289,7 @@
                     class="bg-transparent border-color border-1 rounded-full h-12 p-1 flex flex-row pl-4 gap-5 justify-center items-center">
                     Join our community
                     <div class="rounded-full bg-white">
-                        <img src="./arrow-click.svg" class="size-10" />
+                        <img src="/arrow-click.svg" class="size-10" />
                     </div>
                 </button>
             </div>
@@ -299,9 +299,9 @@
             <div class="flex flex-col items-center gap-2 lg:gap-4 text-center px-7">
                 <div
                     class="relative rounded-full bg-gray-5 w-28 h-9 text-white inner-shadow border border-gray-1 flex flex-row items-center justify-center">
-                    <img src="./label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
+                    <img src="/label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
                     <div class="relative z-10 flex text-sm flex-row gap-2 items-center justify-center">
-                        <img src="./star-icon.svg" class="size-4" />
+                        <img src="/star-icon.svg" class="size-4" />
                         <p>Benefits</p>
                     </div>
                 </div>
@@ -365,9 +365,9 @@
             <div class="lg:hidden flex flex-col px-10 gap-3 lg:gap-4 items-center text-center">
                 <div
                     class="relative rounded-full bg-gray-5 w-28 h-9 text-white inner-shadow border border-gray-1 flex flex-row items-center justify-center">
-                    <img src="./label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
+                    <img src="/label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
                     <div class="relative z-10 flex text-sm flex-row gap-2 items-center justify-center">
-                        <img src="./star-icon.svg" class="size-4" />
+                        <img src="/star-icon.svg" class="size-4" />
                         <p>Features</p>
                     </div>
                 </div>
@@ -382,9 +382,9 @@
                 <div class="hidden lg:flex flex-col gap-3 lg:gap-4 items-center text-center pb-10">
                     <div
                         class="relative rounded-full bg-gray-5 w-28 h-9 text-white inner-shadow border border-gray-1 flex flex-row items-center justify-center">
-                        <img src="./label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
+                        <img src="/label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
                         <div class="relative z-10 flex text-sm flex-row gap-2 items-center justify-center">
-                            <img src="./star-icon.svg" class="size-4" />
+                            <img src="/star-icon.svg" class="size-4" />
                             <p>Features</p>
                         </div>
                     </div>
@@ -435,16 +435,16 @@
                     </div>
                 </div>
             </div>
-            <img src="./white-texture-bg.svg" class="absolute inset-x-0 -z-10 bottom-0 w-full" />
+            <img src="/white-texture-bg.svg" class="absolute inset-x-0 -z-10 bottom-0 w-full" />
         </section>
         <section id="pricing" class="relative py-20 lg:h-[862px] w-full bg-gray-5 flex flex-row items-center justify-center">
             <div class="max-w-[940px] flex flex-col lg:flex-row gap-5 lg:gap-10 items-center justify-center">
                 <div class="flex px-10 flex-col h-fit gap-2 lg:gap-4 items-center text-center lg:items-start lg:text-left pb-10 text-white lg:max-w-[450px]">
                     <div
                         class="relative rounded-full bg-gray-5 w-28 h-9 text-white shadow-inner border border-gray-1/10 flex flex-row items-center justify-center">
-                        <img src="./label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
+                        <img src="/label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
                         <div class="relative z-10 flex text-sm flex-row gap-2 items-center justify-center">
-                            <img src="./star-icon.svg" class="size-4" />
+                            <img src="/star-icon.svg" class="size-4" />
                             <p>Pricing</p>
                         </div>
                     </div>
@@ -465,25 +465,25 @@
                     </p>
                     <ul class="flex flex-col gap-2">
                         <li class="space-x-2 flex flex-row items-center">
-                            <img src="./check.svg" class="size-4" />
+                            <img src="/check.svg" class="size-4" />
                             <p class="font-[400] text-gray-1/60">
                                 Template access
                             </p>
                         </li>
                         <li class="space-x-2 flex flex-row items-center">
-                            <img src="./check.svg" class="size-4" />
+                            <img src="/check.svg" class="size-4" />
                             <p class="font-[400] text-gray-1/60">
                                 Tutorials and examples
                             </p>
                         </li>
                         <li class="space-x-2 flex flex-row items-center">
-                            <img src="./check.svg" class="size-4" />
+                            <img src="/check.svg" class="size-4" />
                             <p class="font-[400] text-gray-1/60">
                                 Private community
                             </p>
                         </li>
                         <li class="space-x-2 flex flex-row items-center">
-                            <img src="./check.svg" class="size-4" />
+                            <img src="/check.svg" class="size-4" />
                             <p class="font-[400] text-gray-1/60">
                                 14-day money-back guarantee
                             </p>
@@ -496,7 +496,7 @@
                             <span>
                                 Get it now
                             </span>
-                            <img src="./arrow-click-thin.svg" class="size-12 bg-transparent" />
+                            <img src="/arrow-click-thin.svg" class="size-12 bg-transparent" />
                         </button>
                     </a>
                     </a>
@@ -507,9 +507,9 @@
             <div class="flex flex-col items-center gap-2 lg:gap-4 text-center px-7 max-w-[940px]">
                 <div
                     class="relative rounded-full bg-gray-5 w-28 h-9 text-white inner-shadow border border-gray-1 flex flex-row items-center justify-center">
-                    <img src="./label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
+                    <img src="/label-texture-bg.svg" class="absolute inset-0 w-full h-full" />
                     <div class="relative z-10 flex text-sm flex-row gap-2 items-center justify-center">
-                        <img src="./star-icon.svg" class="size-4" />
+                        <img src="/star-icon.svg" class="size-4" />
                         <p>FAQ</p>
                     </div>
                 </div>
@@ -525,7 +525,7 @@
                     class="group group border-b border-gray-2/20 py-5 bg-gray-0 px-5 [&[open]]:font-medium font-normal [&[open]]:bg-gray-3/8 rounded-t-3xl">
                     <summary class="flex justify-between items-center cursor-pointer">
                         <h3 class="text-base lg:text-xl">How does this work?</h3>
-                        <img src="./chevron-down.svg" class="size-5 group-[&[open]]:rotate-180 duration-150" />
+                        <img src="/chevron-down.svg" class="size-5 group-[&[open]]:rotate-180 duration-150" />
                     </summary>
                     <div class="pt-4 text-gray-3 font-normal">
                         <p>After purchase, you'll receive a link to duplicate the template into your Notion account.
@@ -537,7 +537,7 @@
                     class="group border-b border-gray-2/20 py-5 bg-gray-0 px-5 [&[open]]:font-medium font-normal [&[open]]:bg-gray-3/8">
                     <summary class="flex justify-between items-center cursor-pointer">
                         <h3 class="text-base lg:text-xl">Is it really worth $97?</h3>
-                        <img src="./chevron-down.svg" class="size-5 group-[&[open]]:rotate-180 duration-150" />
+                        <img src="/chevron-down.svg" class="size-5 group-[&[open]]:rotate-180 duration-150" />
                     </summary>
                     <div class="pt-4 text-gray-3 font-normal">
                         <p>Yes! This template will save you dozens of hours setting up your workspace and help you
@@ -549,7 +549,7 @@
                     class="group border-b border-gray-2/20 py-5 bg-gray-0 px-5 [&[open]]:font-medium font-normal [&[open]]:bg-gray-3/8">
                     <summary class="flex justify-between items-center cursor-pointer">
                         <h3 class="text-base lg:text-xl">Can I use this with Notion's free plan?</h3>
-                        <img src="./chevron-down.svg" class="size-5 group-[&[open]]:rotate-180 duration-150" />
+                        <img src="/chevron-down.svg" class="size-5 group-[&[open]]:rotate-180 duration-150" />
                     </summary>
                     <div class="pt-4 text-gray-3 font-normal">
                         <p>Absolutely! Our template works with Notion's free plan, though some advanced features may
@@ -561,7 +561,7 @@
                     class="group py-5 bg-gray-0 px-5 [&[open]]:font-medium font-normal [&[open]]:bg-gray-3/8 rounded-b-3xl">
                     <summary class="flex justify-between items-center cursor-pointer">
                         <h3 class="text-base lg:text-xl">What is your refund policy?</h3>
-                        <img src="./chevron-down.svg" class="size-5 group-[&[open]]:rotate-180 duration-150" />
+                        <img src="/chevron-down.svg" class="size-5 group-[&[open]]:rotate-180 duration-150" />
                     </summary>
                     <div class="pt-4 text-gray-3 font-normal">
                         <p>We offer a 14-day money-back guarantee. If you're not satisfied with the template, simply
@@ -575,10 +575,10 @@
             class="relative pt-28 lg:pt-44 px-10 lg:px-28 overflow-clip w-full h-[655px] lg:h-[785px] bg-[#FAFAFA] flex flex-col items-center mt-20 gap-4">
             <div class="flex flex-row gap-2">
                 <div class="flex flex-row">
-                    <img src="./customer-1.svg" class="size-6" alt="">
-                    <img src="./customer-2.svg" class="size-6 -ml-2" alt="">
-                    <img src="./customer-3.svg" class="size-6 -ml-2" alt="">
-                    <img src="./customer-4.svg" class="size-6 -ml-2" alt="">
+                    <img src="/customer-1.svg" class="size-6" alt="">
+                    <img src="/customer-2.svg" class="size-6 -ml-2" alt="">
+                    <img src="/customer-3.svg" class="size-6 -ml-2" alt="">
+                    <img src="/customer-4.svg" class="size-6 -ml-2" alt="">
                 </div>
                 <span class="text-gray-4">
                     400+ customers
@@ -596,11 +596,11 @@
                         Get it now
                     </span>
                     <div class="rounded-full bg-white">
-                        <img src="./arrow-click.svg" class="size-10" />
+                        <img src="/arrow-click.svg" class="size-10" />
                     </div>
                 </button>
             </a>
-            <img class="absolute inset-x-0 h-full z-0 w-full lg:h-auto" src="./footer-bg.svg" alt="" />
+            <img class="absolute inset-x-0 h-full z-0 w-full lg:h-auto" src="/footer-bg.svg" alt="" />
             <div class=" text-center lg:text-start bottom-4 absolute flex flex-col lg:flex-row gap-4 lg:gap-0 items-center justify-between w-full lg:max-w-[calc(100vw-200px)]">
                 <p class="py-2 px-4 text-sm lg:text-base rounded-full bg-gray-2/50 backdrop-blur-3xl text-white">
                     © <span id="year"></span> AgencyOS. All rights reserved · Privacy Policy
